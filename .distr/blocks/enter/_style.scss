@@ -1,0 +1,165 @@
+.enter {
+	position: relative;
+	height: 100%;
+	min-height: 812px;
+	background: url('.././img/enter/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	&__wrapper {
+		margin-top: 106px;
+	}
+	&__title {
+		font-size: 40px;
+		line-height: 41px;
+		color: #fff;
+		margin-bottom: 102px;
+	}
+	&__form {
+		padding: 20px 0 0 23px;
+		background: #fff;
+	}
+	.form {
+		&__input {
+			display: flex;
+			flex-direction: column;
+			background: #fff;
+			input {
+				font-family: 'Proxima Nova', sans-serif;
+				font-size: 20px;
+				padding-bottom: 12px;
+				border-bottom: 0.5px solid #363536;
+				&::placeholder {
+					font-family: 'Proxima Nova';
+					font-size: 20px !important;
+					color: rgba(54,53,54,0.25);
+				}
+			}
+			label {
+				font-size: 28px;
+				line-height: 41px;
+				color: #000;
+				font-weight: 900;
+				margin-bottom: 10px;
+			}
+			.password{
+				-webkit-text-security: circle; 
+				font-size: 40px;
+				&::placeholder {
+					font-size: 20px !important;
+				}	
+			}
+		}
+		&__button {
+			input[type="submit"] {
+				width: 100%;
+				min-height: 73px;
+				font-family: 'Proxima Nova' , sans-serif;
+				font-size: 17px;
+				line-height: 19px;
+				text-transform: uppercase;
+				letter-spacing: -0.24px;
+				margin-top: 41px;
+				background: #343334;
+				color: #fff;
+			}
+		}
+	}
+	&__link {
+		margin-top: 31px;
+		margin-left: 24px;
+		a {
+			font-family: 'Proxima Nova', sans-serif;
+			font-size: 17px;
+			line-height: 13px;
+			text-transform: uppercase;
+			color: #363536;
+		}
+	}
+	&__question {
+		max-width: 23px;
+		max-height: 23px;
+		margin-top: 161px;
+		margin-left: auto;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	&__modal {
+		position: absolute;
+		z-index: 3;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		max-width: 272px;
+		background: #fff;
+		text-align: center;
+		padding: 9px 0 20px; 
+		&-title {
+			font-size: 20px;
+			line-height: 41px;
+			font-weight: 900;
+			margin-bottom: 5px;
+			color: #363536;
+		}
+		&-text {
+			font-family: 'Proxima Nova', sans-serif;
+			font-size: 15px;
+			line-height: 22px;
+			letter-spacing: -0.24px;
+			margin-bottom: 24px;
+		}
+		&-button {
+			a {
+				font-family: 'Proxima Nova', sans-serif;
+				font-size: 17px;
+				line-height: 13px;
+				letter-spacing: 0.5px;
+				color: #363536;
+			}
+		}
+	}
+	&__login {
+		&-wrapper {
+			margin-top: 46px;
+		}
+		&-title {
+			position: relative;
+			font-size: 28px;
+			line-height: 41px;
+			font-weight: 900;
+			color: #fff;
+			margin-left: 20px;	
+			margin-bottom: 168px;
+			a {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				position: absolute;
+				top: 50%;
+				left: -15%;
+				transform: translateY(-50%);
+			}		
+		}
+	}
+}
+
+#changePassword {
+	display: none;
+}
+
+#newPassword {
+	display: none;
+}
+
+.shadow {
+	position: absolute;
+	z-index: 2;
+	background: rgba(#000, .4);
+	width: 100%;
+	max-width: 375px;
+	min-height: 100vh;	
+	display: none;
+}

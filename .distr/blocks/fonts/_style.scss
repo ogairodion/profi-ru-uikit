@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Athelas';
+  src: url('fonts/Athelas-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Athelas';
+  src: url('fonts/Athelas-Bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('fonts/proximanova-regular.woff2') format('woff2'),
+        url('fonts/proximanova-regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

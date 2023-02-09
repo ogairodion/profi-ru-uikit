@@ -1,0 +1,80 @@
+.deal {
+	position: relative;
+	height: 100%;
+	min-height: 812px;
+	background: url('.././img/deal/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	&__wrapper {
+		margin-top: 65px;
+	}
+	&__burger {
+		margin-left: -8%;
+		margin-bottom: 37px;
+	}
+	&__title {
+		font-size: 40px;
+		line-height: 41px;
+		font-weight: 900;
+		margin-bottom: 21px;
+	}
+	&__list {
+		position: relative;
+		background: #fff;
+		padding: 0 56px 0 20px;
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 2;
+			height: 100%;
+			width: 4px;
+			right: 66px;
+			top: 56px;
+			background: #333333;
+		}
+		&-item {
+			padding: 9px 0 12px;
+			&_date {
+				font-family: 'Proxima Nova' , sans-serif;
+				font-size: 17px;
+				line-height: 28px;
+			}
+			&:first-child {
+				.deal__list-item_title {
+					&:after {
+						border: 2px solid #000;
+						background: #fff;
+					}
+				}
+			}
+			&_title {
+				position: relative;
+				font-family: 'Proxima Nova' , sans-serif;
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: 900;
+				&:after {
+					content: '';
+					position: absolute;
+					right: 0;
+					z-index: 3;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 20px;
+					height: 20px;
+					border: 2px solid #000;
+					border-radius: 50%;
+					background: #000;
+				}
+			}
+			&_text {
+				font-family: 'Proxima Nova' , sans-serif;
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+	}
+}
